@@ -11,10 +11,16 @@
 }
 
 .address a {
+    cursor: pointer;
     font-size: inherit;
     line-height: inherit;
     text-decoration: underline;
     text-underline-offset: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.address a:hover {
+    text-underline-offset: 6px;
 }
 
 .overlay {
@@ -73,11 +79,18 @@
 }
 
 .header__link {
+    cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.header__link:hover {
+    text-underline-offset: 6px;
 }
 
 .header__link_active {
+    cursor: default;
     text-decoration: none;
 }
 
@@ -144,6 +157,7 @@
 }
 
 .bet-button {
+    cursor: pointer;
     color: #fff;
     font-size: 22px;
     font-weight: 400;
@@ -152,6 +166,11 @@
     padding: 11px 31px 10px 30px;
     background: transparent;
     border: 1px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.bet-button:hover {
+    transform: scale(1.05);
 }
 
 /* Стили для секции lots */
@@ -180,6 +199,10 @@
     list-style: none;
 }
 
+.card-link {
+    cursor: pointer;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -192,6 +215,11 @@
     background-repeat: no-repeat;
     height: 100%;
     padding: 51px 40px 48px;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card_type_film {
@@ -222,6 +250,7 @@
 }
 
 .lots__look-more-link {
+    cursor: pointer;
     display: block;
     font-size: 20px;
     font-weight: 400;
@@ -230,6 +259,11 @@
     text-underline-offset: 5px;
     margin-top: 30px;
     margin-left: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.lots__look-more-link:hover {
+    text-underline-offset: 6px;
 }
 
 /* Стили для секции about */
@@ -298,14 +332,21 @@
 }
 
 .footer__menu-link {
+    cursor: pointer;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     text-decoration: underline;
     text-underline-offset: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__menu-link:hover {
+    text-underline-offset: 5px;
 }
 
 .footer__menu-link_active {
+    cursor: default;
     text-decoration: none;
 }
 
@@ -316,6 +357,10 @@
 
 .footer__social-list-item {
     list-style: none;
+}
+
+.footer__social-link {
+    cursor: pointer;
 }
 
 .footer__social-icon {
